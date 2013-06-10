@@ -25,4 +25,8 @@ class PigLatinTest < Test::Unit::TestCase
 		assert_equal("oloyay",x)
 	end
 
+	def test_not_string
+		x=piglating(NO)
+		asser_equal(nil,x)
+	end
 end
