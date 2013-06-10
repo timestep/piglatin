@@ -9,9 +9,12 @@ def piglatin(x)
 	return array.join
 end
 
+
 puts piglatin("pig")
 puts piglatin("computer")
 puts piglatin("freedom")
 puts piglatin("string")
 puts piglatin("String")
 puts piglatin("StrinG")
+
+puts piglatin("pig").class
