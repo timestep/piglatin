@@ -1,8 +1,7 @@
-def piglatin
-	x = gets.chomp
+def piglatin(x)
 	i = x.index(/[aeiou]/i)
  	x = x.downcase.split("")
  	1.upto(i) { x<<x.shift }  		
- 	puts x.join + "ay"
+ 	return x.join + "ay"
 end
 
