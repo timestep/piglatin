@@ -10,7 +10,9 @@ class PigLatinTest < Test::Unit::TestCase
 	def test_first_letter_is_vowel
 		assert "aeiou".include? piglatin("tree").split("").first
 	end
-	
+
+	def test_last_two_letters_are_ay
+		assert 
 end
 
 

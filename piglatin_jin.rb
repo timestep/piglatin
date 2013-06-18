@@ -11,6 +11,10 @@ def piglatin(x)
 
 end
 
-
-puts piglatin("tree")
-puts piglatin(tree)
+begin
+test = ["tree", 2, "Allthesame", "asdf"]
+0.upto(3) do |x|
+	puts piglatin(test[x])
+rescue Exception => e
+	puts "OOOOOOPS"
+end
