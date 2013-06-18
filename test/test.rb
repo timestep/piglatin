@@ -26,7 +26,15 @@ class PigLatinTest < Test::Unit::TestCase
 	end
 
 	def test_not_string
-		x=piglating(NO)
+		x=piglatin(NO)
 		asser_equal(nil,x)
+	end
+
+	def test_nil
+		assert_equal nil, piglatin(nil)
+	end
+
+	def test_empty_string
+		assert_equal "", piglatin("")
 	end
 end
